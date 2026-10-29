@@ -281,6 +281,8 @@ impl Services {
             });
         }
 
+        crate::slack::start(services.clone());
+
         Ok(services)
     }
 
